@@ -19,7 +19,7 @@ For more info on Providing access to AWS Accounts owned by Third Parties, see th
 ```
 example : arn:aws:iam::111111111111:role/cloudWatchDashAccess
 ```
-<video src="https://youtu.be/9a6BPaRnaL0" width="320" height="200" controls preload></video>
+{% include youtubePlayer.html id="9a6BPaRnaL0" %}
 
 #### externalid
 When you grant our API access to your IAM role, an external ID is created that our API will use to assume the role.
