@@ -82,7 +82,22 @@ example : https://rapidapi.com/quodlibet/api/publiccloudwatchdashboard
 #### periodone
 The first of the three time periods each metric on the dashboard is displayed for.
 Valid values are : hour, day, week, month
+Default value : hour
 ```
 example : hour
 ```
-
+!(periods.png)
+#### periodtwo
+The second of the three time periods each metric on the dashboard is displayed for.
+Valid values are : hour, day, week, month
+Default value : day
+```
+example : hour
+```
+#### periodthree
+The second of the three time periods each metric on the dashboard is displayed for.
+Valid values are : hour, day, week, month
+Default value : week
+```
+example : hour
+```
