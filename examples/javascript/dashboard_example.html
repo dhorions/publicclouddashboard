@@ -1,0 +1,43 @@
+<html>
+<head>
+<script  src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+</head>
+<body onload="showDashboard()">
+Loading Dashboard...
+
+<script>
+function showDashboard()
+{
+	var role 				        = "arn:aws:iam::XXXXX:role/YourRoleNameHere";
+	var externalid 			    = "EXTERNALID";
+	var dashboard 			    = "DASHBOARDNAME";
+	var region 				      = "us-east-1";
+	var periodone 			    = "hour";
+	var periodtwo 			    = "day";
+	var periodthree 		    = "week";
+	var infolink 			      = "https://dhorions.github.io/publicclouddashboard/";
+	var infolinktext 		    = "API Documentation";
+	var companyurl 			    = "http://quodlibet.be";
+	var companyname 		    = "Quodlibet";
+	var updatefrequency 	  = 1;
+	var updatefrequencyunit = "hour";
+	
+	var settings = {
+		"async": true,
+		"crossDomain": true,
+		"url": "https://publiccloudwatchdashboard.p.rapidapi.com/dashboard?periodone="+periodone+"&periodtwo="+periodtwo+"&periodthree="+periodthree+"&infolink="+infolink+"&companyurl="+companyurl+"&infolinktext="+infolinktext+"&companyname="+companyname+"&updatefrequency=1&externalid="+externalid+"&updatefrequencyunit="+updatefrequencyunit+"&region="+region+"&role="+role+"&dashboard="+dashboard,
+		"method": "GET",
+		"headers": {
+			"x-rapidapi-host": "publiccloudwatchdashboard.p.rapidapi.com",
+			"x-rapidapi-key": "ENTERRAPIDAPIKEYHERE"
+		}
+	}
+
+	$.ajax(settings).done(function (response){
+		//console.log(response);
+		window.location.replace(response.dashboardUrl);
+	});
+}
+</script>
+</body>
+</html>
