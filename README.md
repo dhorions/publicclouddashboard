@@ -5,7 +5,7 @@
 
 
 # Make your AWS Cloudwatch Dashboards available outside the AWS Console
-{% include youtubePlayer.html id=9a6BPaRnaL0 %}
+{% include youtubePlayer.html id="9a6BPaRnaL0" %}
 
 With this API you can expose your AWS Cloudwatch dashboard to people that don't have an IAM user through a pre-signed private url.
 
@@ -43,12 +43,13 @@ example : arn:aws:iam::111111111111:role/cloudWatchDashAccess
 ```
 ##### How to create this role and give the api access
 
-{% include youtubePlayer.html id=f5ZXELy49Tc %}
+{% include youtubePlayer.html id="f5ZXELy49Tc" %}
 
 
 #### externalid
 When you grant our API access to your IAM role, an external ID is created that our API will use to assume the role.
 For more info on using an External ID When Granting Access to Your AWS Resources to a Third Party see the [AWS documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html).
+
 The account ID that needs to be granted access to your role is 956353661285 .
 ```
 example : A1b11ABBAaB
@@ -65,14 +66,18 @@ example : ELBDashboard
 ```
 #### updatefrequencyunit
 The unit for the update frequency.
+
 Valid values are : month, week, day, hour, minute
-Whenever a request is made to the api for a specific dashboard, a check is done if the last update of the dashboard was longer than ( updatefrequency * updatefrequencyunit ) ago.  If so, the dashboard is refreshed.
+
+Whenever a request is made to the api for a specific dashboard, a check is done if the last update of the dashboard was longer than ( updatefrequency * updatefrequencyunit ) ago. 
+If so, the dashboard is refreshed.
 
 ```
 example : hour
 ```
 #### updatefrequency
 The update frequency.
+
 The number of units specified in the parameter updatefrequencyunit that determine if the dashboard should be refreshed.
 
 ```
@@ -108,7 +113,9 @@ example : https://rapidapi.com/quodlibet/api/publiccloudwatchdashboard
 ```
 #### periodone
 The first of the three time periods each metric on the dashboard is displayed for.
+
 Valid values are : hour, day, week, month
+
 Default value : hour
 ```
 example : hour
@@ -116,14 +123,18 @@ example : hour
 ![periods example](/periods.png)
 #### periodtwo
 The second of the three time periods each metric on the dashboard is displayed for.
+
 Valid values are : hour, day, week, month
+
 Default value : day
 ```
 example : hour
 ```
 #### periodthree
 The second of the three time periods each metric on the dashboard is displayed for.
+
 Valid values are : hour, day, week, month
+
 Default value : week
 ```
 example : hour
