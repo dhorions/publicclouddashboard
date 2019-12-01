@@ -6,6 +6,7 @@
 
 
 # Make your AWS Cloudwatch Dashboards available outside the AWS Console
+{% include youtubePlayer.html id=9a6BPaRnaL0 %}
 
 With this API you can expose your AWS Cloudwatch dashboard to people that don't have an IAM user through a pre-signed private url.
 
