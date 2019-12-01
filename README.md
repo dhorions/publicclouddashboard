@@ -5,7 +5,7 @@
 
 
 # Make your AWS Cloudwatch Dashboards available outside the AWS Console
-{% include youtubePlayer.html id="9a6BPaRnaL0" %}
+{% include youtubePlayer.html id="f5ZXELy49Tc" %}
 
 With this API you can expose your AWS Cloudwatch dashboard to people that don't have an IAM user through a pre-signed private url.
 
@@ -43,8 +43,8 @@ example : arn:aws:iam::111111111111:role/cloudWatchDashAccess
 ```
 ##### How to create this role and give the api access
 
-{% include youtubePlayer.html id="f5ZXELy49Tc" %}
 
+{% include youtubePlayer.html id="9a6BPaRnaL0" %}
 
 #### externalid
 When you grant our API access to your IAM role, an external ID is created that our API will use to assume the role.
