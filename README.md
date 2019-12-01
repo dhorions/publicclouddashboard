@@ -19,6 +19,26 @@ For more info on Providing access to AWS Accounts owned by Third Parties, see th
 ```
 example : arn:aws:iam::111111111111:role/cloudWatchDashAccess
 ```
+
+##### example role
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "cloudwatch:Describe*",
+                "cloudwatch:Get*",
+                "logs:Get*",
+                "logs:FilterLogEvents"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ]
+}
+```
+##### How to create this role and give the api access
 {% include youtubePlayer.html id=9a6BPaRnaL0 %}
 
 #### externalid
