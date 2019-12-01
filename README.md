@@ -4,7 +4,6 @@
 
 
 
-
 # Make your AWS Cloudwatch Dashboards available outside the AWS Console
 {% include youtubePlayer.html id=9a6BPaRnaL0 %}
 
