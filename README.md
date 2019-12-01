@@ -102,3 +102,20 @@ Default value : week
 example : hour
 ```
 
+##sample response
+```
+{
+  "dashboardUrl": "https://publiccwdashboard.s3.us-east-2.amazonaws.com/eu-west-1/1925046479/Dashboardname/dashboard.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20191201T113328Z&X-Amz-SignedHeaders=host&X-Amz-Expires=604799&X-Amz-Credential=AKIA55KY6ZFS6CXLNEVR%2F20191201%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=0ee2baa1bd1638db6a9c8d571244caafb743258e3c811e71d8c4ad2d26f6d3fe",
+  "status": 200,
+  "messages": [
+    {
+      "message": "Dashboard is being updated, it will be available in a few seconds.",
+      "type": "info"
+    },
+    {
+      "message": "The Dashboard Url will be valid until Sun Dec 08 11:33:28 UTC 2019",
+      "type": "info"
+    }
+  ]
+}
+```
