@@ -12,6 +12,9 @@ With this API you can expose your AWS Cloudwatch dashboard to people that don't 
 ## Sign Up
 To signup for the API, get your API key on [RapidApi](https://rapidapi.com/quodlibet/api/publiccloudwatchdashboard).
 
+## Examples
+[Javascript example](https://github.com/dhorions/publicclouddashboard/blob/master/examples/javascript/dashboard_example.html)
+
 ## Parameters
 ### Required Parameters
 #### role
