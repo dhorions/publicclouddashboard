@@ -86,7 +86,7 @@ Default value : hour
 ```
 example : hour
 ```
-![periods example](periods.png)
+![periods example](/periods.png)
 #### periodtwo
 The second of the three time periods each metric on the dashboard is displayed for.
 Valid values are : hour, day, week, month
